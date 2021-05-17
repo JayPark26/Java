@@ -1,0 +1,25 @@
+//if(){
+  //then() }
+//Changing career is always difficult. But, through hardships come great knowledge.
+//boolean -- gives you a 'true' or 'false' result.
+
+package Week1;
+
+public class IfThen {
+
+	public static void main(String[] args) {
+		int a=10, b=20;
+		boolean flag=false;
+		
+		if(a==10) {
+			System.out.println("a is 10");
+		}
+		if(a==b) {
+			System.out.println("a=b then true");
+		}
+		if(flag) {
+			System.out.println("flag is true");
+		}
+
+	}
+}
