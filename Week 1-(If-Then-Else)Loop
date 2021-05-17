@@ -1,0 +1,31 @@
+//if(){
+  //then()}
+  //else{ }
+
+
+package Week1;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		int a=10, b=20;
+		boolean flag=false;
+		if(a>10) {
+			System.out.println("a is greater than b");
+		}else {
+			System.out.println("a is not greater than b");
+		}
+			if(a==10 && b>=20) {
+				System.out.println("satisfy");
+			}else {
+				System.out.println("does not satisfy");
+			}
+		
+	if(flag) {
+		System.out.println("true");
+	}else {
+		System.out.println("false");
+		
+	}
+}
+}
