@@ -1,0 +1,28 @@
+//Practice Makes Perfect
+//This was a tough thing to understand.
+//Eventually, time is what you need
+
+package Week1;
+
+public class Op2 {
+
+	public static void main(String[] args) {
+		int i=5, j;
+		j=i++;
+		System.out.println("j="+j);
+		j=++i;
+		System.out.println("j="+j);
+		j=i--;
+		System.out.println("j="+j);
+		j=--i;
+		System.out.println("j="+j);
+		
+		System.out.println("current i= "+i);
+		System.out.println("i++ : "+i++);
+		System.out.println("++i : "+(++i));
+		System.out.println("i-- : " +i--);
+		System.out.println("--i :"+(--i));
+		
+	}
+
+}
