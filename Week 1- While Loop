@@ -1,0 +1,30 @@
+//not widely used than For Loop.
+//But still need to know when and why it is used.
+//Week 1 is over and there are plenty of things to come up.
+package Week 1;
+
+public class While1 {
+
+	public static void main(String[] args) {
+		
+		int i=1;
+		while(i<=10) {
+			System.out.print((i++)+"\t");
+		}
+
+	}
+
+}
+public class While2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=0, sum=0;
+		while(i<=100) {
+			sum+=i;
+			i+=2;
+		}
+	System.out.println("sum=" +sum);
+	}
+
+}
