@@ -1,0 +1,46 @@
+//Different Arrays were used.
+//aside from using for(int a=0;a<twoDim.length;a++){
+//System.out.println(a)
+//I can use for(int a:twoDim.length){
+ //System.out.println(a)}
+
+public class ArrayNewFor {
+
+	public static void main(String[] args) {
+		ArrayNewFor arr= new ArrayNewFor();
+		arr.twoDimForWithCounter();
+		arr.printArray3();
+	}
+	public void newFor() {
+		int[] oneDim= new int[] {1,2,3,4,5,6,7,8,9,10};
+		for(int data:oneDim) {
+			System.out.println(data);
+			
+		}
+	}
+		public void printArray3() {
+			int [][]jav= {{1,2,3},{4,5,6}};
+			System.out.println("array.length= "+jav.length);
+			System.out.println("array[0].length= "+jav[0].length);
+			
+			int a=jav.length;
+			for(int i=0;i<jav.length;i++) {
+				int b=jav[i].length;
+				for(int j=0;j<b;j++) {
+					System.out.println("["+i+"]["+j+"]="+jav[i][j]);
+			}
+		}
+		}
+		public void twoDimForWithCounter() {
+			int[][] twoDim= {{1,2,3},{4,5,6}};
+		int a=0;
+		for(int[]dimArray:twoDim) {
+		int b=0;
+		for(int data:dimArray) {
+			b++;
+		System.out.println(data);
+		}a++;
+		}
+}
+}
+			
