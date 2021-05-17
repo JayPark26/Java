@@ -1,0 +1,38 @@
+//Wow... 
+//What I learned: Switch, import java.util.Scanner, Scanner sc = new Scanner (System.in), and nextInt().
+//nextInt() -- Type numbers.
+//Break; -- Basically, gets you out of the switch loop. If there's no break in between case 1 and 2, it will print out case 1 and 2.
+//(System.in) -- input any letter or number. 
+//Scanner is used with import java.util Scanner.
+package Week1;
+
+import java.util.Scanner;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		int grade;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Type your Year");
+		grade=sc.nextInt();
+		switch(grade) {
+		case 1:
+			System.out.println("1st grade");
+			break;
+		case 2:
+			System.out.println("2nd grade");
+			break;
+		case 3:
+			System.out.println("3rd grade");
+			
+		case 4:
+			System.out.println("4th grade");
+			break;
+		default:
+			System.out.println("wrong year");
+			break;
+		}
+
+	}
+
+}
