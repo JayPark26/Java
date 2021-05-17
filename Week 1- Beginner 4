@@ -1,0 +1,21 @@
+//This chapter is easier than I thought.
+//I am getting to know Java better!
+//Love the feeling that I am learning something bth
+
+package Week1;
+
+public class Op4 {
+
+	public static void main(String[] args) {
+		int a=10, b=20;
+		System.out.println(a==10 && b==20);
+		System.out.println(a>10 && b==20);
+		System.out.println(a==20 && b==10);
+		System.out.println(a<10 && b>20);
+		
+		System.out.println(a==10 || b==20);
+		System.out.println(a>10 || b==20);
+		System.out.println(a==10 || b==10);
+		System.out.println(a<10 || b>20);
+		
+	}
