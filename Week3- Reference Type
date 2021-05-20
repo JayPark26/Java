@@ -1,0 +1,31 @@
+//Creating object without the use of 'new' is only String.
+//byte,short,int,long,float,double,char,boolean is Primitive Type.
+//We use constructor to assign a value.
+//For example, MemberDTO(String name), it is a constructor that has a parameter. below it is 'this.name=name'
+//'this.name' represents instance variable while, 'name' stands for parameter.
+
+public class MemberDTO {
+String name;            //instance variable
+String number;          //instance variable
+String address;         //instance variable
+	public MemberDTO() {}     //constructor
+	public MemberDTO(String name) {     //constructor
+		this.name=name;
+	}
+	public MemberDTO(String number, String address) {     //constructor
+		this.number=number;
+		this.address=address;
+	}
+	public MemberDTO(String name, String number, String address) {        //constructor
+		this.name=name;
+		this.number=number;
+		this.address=address;
+	}
+	public String member() {
+		return this.name+" "+this.address;
+	}
+	public static void main (String[] args) {
+	MemberDTO d1=new MemberDTO("Taeyang","010","seoul");
+	System.out.println(d1.member());
+  }
+}	
