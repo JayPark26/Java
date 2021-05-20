@@ -1,0 +1,35 @@
+//When you call the same method printed in parent's class, You will only get the Child class method printed out.
+//Constructor automatically makes super() in child class, but method does not do that for you.
+//This is called Overriding.
+//When you need to change the return type of ChildOverriding class, Java does not allow you to do that.
+//It is because you override a different one.
+//It applies the same with an access modifier.
+//It is possible to make parent class method private. But, you cannot make child class method private because you inherited from parent class.
+
+public class ParentOverriding {
+	public ParentOverriding() {
+		System.out.println("parentoverriding constructor");
+	}
+	public void printName() {
+		System.out.println("printName()-ParentOverriding");
+	}
+}
+
+public class ChildOverriding extends ParentOverriding{
+	public ChildOverriding() {
+		System.out.println("Childoverriding constructor");
+	}
+	public void printName() {
+		System.out.println("childoverriding printname");
+	}
+}
+
+public class InheritanceOverriding {
+
+	public static void main(String[] args) {
+		ChildOverriding c=new ChildOverriding();
+		c.printName();
+
+	}
+
+}
