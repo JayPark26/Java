@@ -1,0 +1,38 @@
+//There are 3 conditions on closing a method in java.
+//1. closing the parenthesis.
+//2. Reaching 'return' statement.
+//3. when there is a 'throw'.
+//void means there is nothing to return.
+//Based on how I understood, void and return is differentiated by the use of System.out.println().
+//if System.out.println is used inside a method, then you use void.
+//otherwise, when you use it in main method, you use return.
+//After using return, there must be no statement.
+public class ReferenceReturn {
+
+	public static void main(String[] args) {
+		ReferenceReturn reference=new ReferenceReturn();
+		System.out.println(reference.intReturn());
+		reference.intArrayReturn();
+		System.out.println(reference.stringReturn());
+
+	}
+	public int intReturn() {
+		int returnInt=0;
+		if(returnInt==1) {
+		return	++returnInt;
+		}else {
+			return --returnInt;
+		}
+	}
+	public int[] intArrayReturn() {
+		int[] returnArray=new int[] {1,2,3,4,5,6,7,8,9,9};
+		for(int a=0 ;a<returnArray.length;a++) {
+		System.out.println(returnArray[a]);
+		}
+		return returnArray;
+	}
+	public String stringReturn() {
+		String returnString="Return value";
+		return returnString;
+	}
+}
