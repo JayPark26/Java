@@ -1,0 +1,31 @@
+//This is a tough subject.
+//When you call Child() in the main method, you not only print child but also parent's because you extended Child to Parent.
+//c.printName() is originally used to call Child()'s printName(). But, since you don't have the particular method, the system refers it to parent's class
+//because you inherited Child from Parent class.
+//Tips:
+//When a child constructor is being called, parent's class constructor will also be called.
+//You can only inherit public or protected variables and method from parent class.
+//You cannot inherit 2 class at the same time.
+
+public class Child extends Parent {
+	public Child() {
+		System.out.println("Child Constructor");
+	}
+	
+}
+
+public class Parent {
+	public Parent() {
+		System.out.println("Parent Constructor");
+	}
+public void printName() {
+	System.out.println("Parent printName()");
+}
+}
+public class InheritancePrint {
+
+	public static void main(String[] args) {
+		Child c= new Child();
+		c.printName();
+	}
+}
