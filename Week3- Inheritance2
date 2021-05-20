@@ -1,0 +1,27 @@
+//When there is a parameter you have to receive, you use 'super()'.
+//public ChildArg() is used to call ParentArg() method. 
+//But you don't have ParentArg() method. Instead, you have ParentArg(String name).
+//So, you use super("") inside ChildArg() to call ParentArg(String name).
+
+//When you have a constructor with a parameter, java doesn't automatically make a constructor.
+//Therefore you can solve it in 2 ways:
+//use super()
+//make a constructor w/o a parameter in parent class.
+
+public class ParentArg {
+	public ParentArg(String name) {
+		System.out.println("ParentArg("+name+")constructor");
+	}
+	public void printName() {
+		System.out.println("printName()-ParentArg");
+	}
+	public ParentArg(InheritancePrint obj) {
+		System.out.println("ParentArg(InheritancePrint)constructor");
+	}
+	}
+public class ChildArg extends ParentArg{
+	public ChildArg() {
+		super("ChildArg");
+		System.out.println("Child constructor");
+	}
+}
