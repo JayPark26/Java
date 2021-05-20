@@ -1,0 +1,5 @@
+//I am talking about class level modifiers.
+//public- Anyone can have access.
+//protected- you must be in the same package, or you must have inheritance.
+//package-private- you don't write any access modifier or when you are in the same package.
+//private- you can only access in the same class.
