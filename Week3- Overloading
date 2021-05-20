@@ -1,0 +1,31 @@
+//I asked myself this question while studying this chapter.
+//"Can I use different primitive types inside a constructor parameter?"
+//The answer is "yes". 
+//'Overloading' is a term used when you want the name of the method to be equal while changing the values of the parameter.
+//As long as you do not use the same parameter in the same order, you can 'overload'.
+//This helps us to print out information we only need.
+
+public class ReferenceOverloading {
+String phonenumber;
+double grade;
+String name;
+
+	public static void main(String[] args) {
+		ReferenceOverloading ro=new ReferenceOverloading("01040921015",90.2,"Taeyang");
+		ro.use();
+	}
+	public ReferenceOverloading(String n,double g,String na) {
+		phonenumber=n;
+		grade=g;
+		this.name=na;
+		
+	}
+	public ReferenceOverloading(String n, double g) {
+		phonenumber=n;
+		grade=g;
+	}
+	void use() {
+		System.out.println("phone number: "+phonenumber+"grade is: "+grade);
+	}
+
+}
