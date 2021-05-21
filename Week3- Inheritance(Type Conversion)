@@ -1,0 +1,69 @@
+//When making an object for child, you cannot use parent constructor in java.
+//instanceof helps define what type it used.
+//you have to use the lowest class first when using instanceof.
+//Parent parent= new Child() is GOOD.
+//Child child- new Parent() is UNACCEPTABLE.
+//Parent parent = new Child() means calling Child() constructor to Parent Class. 
+//Therefore, will show only what's in the Parent class.
+public class ParentCasting {
+	public ParentCasting() {
+		
+	}
+	public ParentCasting(String name) {
+		
+	}
+	public void printName() {
+		System.out.println("printName()-Parent");
+	}
+}
+
+public class ChildCasting extends ParentCasting{
+	public ChildCasting() {
+		
+	}
+	public ChildCasting(String name) {
+		
+	}
+	public void printName() {
+		System.out.println("printName()-Childcasting");
+	}
+	public void printAge() {
+		System.out.println("printAge()-18month");
+	}
+}
+
+public class InheritanceCasting {
+
+	public static void main(String[] args) {
+		InheritanceCasting inheritance = new InheritanceCasting();
+	//	inheritance.objectCast();
+		inheritance.objectCastArray();
+
+	}
+	public void objectCast() {
+		
+		ChildCasting child= new ChildCasting();
+		
+		ParentCasting parent2=child;
+		ChildCasting child2=(ChildCasting)parent2;
+	}
+	public void objectCastArray() {
+		ParentCasting[] parentArray=new ParentCasting[3];
+		parentArray[0]=new ChildCasting();
+		parentArray[1]=new ParentCasting();
+		parentArray[2]=new ChildCasting();
+		objectTypeCheck(parentArray);
+	}
+
+	private void objectTypeCheck(ParentCasting[] parentArray) {
+		for(ParentCasting data:parentArray) {
+			if(data instanceof ChildCasting) {
+				System.out.println("childcasting");
+				ChildCasting tempChild= (ChildCasting)data;
+				tempChild.printAge();
+			}else if(data instanceof ParentCasting) {
+				System.out.println("Parentcasting");
+			}
+		}
+	}
+}
